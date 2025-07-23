@@ -1,0 +1,26 @@
+# FastAPI and core dependencies
+fastapi==0.111.0
+uvicorn==0.30.1
+pydantic==2.7.1
+pydantic-settings==2.3.4
+python-dotenv==1.0.1
+
+# Database drivers
+pymongo==4.7.2
+motor==3.3.2
+
+# Authentication & Security
+python-jose[cryptography]==3.3.0
+passlib==1.7.4 # Hoặc phiên bản mới nhất bạn biết là ổn định
+bcrypt==3.2.0 # Hoặc phiên bản mới nhất bạn biết là ổn định
+
+# Testing dependencies
+pytest
+httpx
+pytest-asyncio
+pydantic[email] # Pydantic extra for email validation
+pymongo[srv] # PyMongo extra for SRV records (MongoDB Atlas)
+motor[snappy] # Motor extra for Snappy compression
+pytest-mock # Để mock các dependency
+pytest-mongodb # Nếu bạn dùng pytest-mongodb
+# bcrypt # Đã có trong phần "Authentication & Security" nếu bạn dùng chung
