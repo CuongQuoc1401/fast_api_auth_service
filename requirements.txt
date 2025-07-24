@@ -24,3 +24,5 @@ motor[snappy] # Motor extra for Snappy compression
 pytest-mock # Để mock các dependency
 pytest-mongodb # Nếu bạn dùng pytest-mongodb
 # bcrypt # Đã có trong phần "Authentication & Security" nếu bạn dùng chung
+
+gunicorn==20.1.0
