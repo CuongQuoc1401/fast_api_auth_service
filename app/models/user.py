@@ -10,6 +10,9 @@ class UserDBModel(BaseModel):
     username: str
     email: EmailStr
     hashed_password: str # Có trong DB nhưng không có trong Schema Response
+    full_name: Optional[str] = None # Bổ sung trường này
+    address: Optional[str] = None # Bổ sung trường này
+    phone_number: Optional[str] = None # Bổ sung trường này
     is_active: bool = True
     is_superuser: bool = False
     created_at: datetime
